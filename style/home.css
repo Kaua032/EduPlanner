@@ -200,7 +200,7 @@ nav {
     width: 60px;
     height: 100vh;
     max-height: none;
-    padding: 30px 0px 0px 5px;
+    padding: 0;
     background-color: #fff;
   }
   .navIcons {
@@ -216,20 +216,5 @@ nav {
   }
   .navIcons a p {
     color: #112940;
-  }
-}
-
-@media (min-width: 800px){
-  nav{
-    width: 150px;
-  }
-  .navIcons a {
-    gap: 5px;
-  }
-  .navIcons a p{
-    display: flex;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 14px;
   }
 }
