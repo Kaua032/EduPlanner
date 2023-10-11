@@ -181,6 +181,10 @@ nav {
   max-width: 45px;
 }
 
+.navIcons a p{
+  display: none;
+}
+
 @media (min-width: 700px) {
   header {
     width: 92.5%;
@@ -212,5 +216,20 @@ nav {
   }
   .navIcons a p {
     color: #112940;
+  }
+}
+
+@media (min-width: 800px){
+  nav{
+    width: 150px;
+  }
+  .navIcons a {
+    gap: 5px;
+  }
+  .navIcons a p{
+    display: flex;
+    font-family: Poppins;
+    font-weight: 500;
+    font-size: 14px;
   }
 }
