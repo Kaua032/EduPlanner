@@ -7,11 +7,14 @@
         "bloco": "A",
         "duracao": "1h",
         "professor": "Artur Oliveira",
-        "icon":"../img/Pfp/professor/man2.png",
-        "atribuicao":1,
-        "categorias": ["Figma", "UI/UX", "Design de interfaces"],
-        "descricao":
-            "Nessa aula iremos aprender a explorar o universo do Figma! Descubra as habilidades fundamentais para criar designs incríveis e colaborativos. Explore recursos avançados de prototipagem, edição de vetores e compartilhamento em tempo real. Prepare-se para se inspirar com as infinitas possibilidades que o Figma tem a oferecer!"
+        "icon": "../img/Pfp/professor/man2.png",
+        "atribuicao": 1,
+        "categorias": [
+            "Português",
+            "Artes",
+            "Inglês"
+        ],
+        "descricao": "Esta aula se concentrará em aprimorar suas habilidades em português, artes e inglês. Vamos explorar a gramática portuguesa, apreciar a beleza das artes e mergulhar na literatura inglesa. Prepare-se para uma jornada emocionante através das linguagens."
     },
     {
         "nomeDaAula": "Matemática",
@@ -21,11 +24,14 @@
         "bloco": "B",
         "duracao": "1h",
         "professor": "Patrícia Oliveira",
-        "icon":"../img/Pfp/professor/woman2.png",
-        "atribuicao":0,
-        "categorias": [ "Normas de Segurança","EPi's", "Prevenção de Acidentes"],
-        "descricao":
-        "Aprenda os fundamentos essenciais da segurança no trabalho nesta aula prática. Descubra como identificar riscos, implementar medidas de prevenção e promover um ambiente de trabalho seguro."
+        "icon": "../img/Pfp/professor/woman2.png",
+        "atribuicao": 0,
+        "categorias": [
+            "Álgebra",
+            "Geometria",
+            "Cálculo"
+        ],
+        "descricao": "Nesta aula de matemática, vamos explorar os conceitos fundamentais da álgebra, geometria e cálculo. Vamos aprender a resolver equações, entender formas geométricas e suas propriedades, e mergulhar no fascinante mundo do cálculo diferencial e integral. Prepare-se para uma jornada emocionante através da matemática."
     },
     {
         "nomeDaAula": "Humanas",
@@ -35,23 +41,31 @@
         "bloco": "C",
         "duracao": "1h",
         "professor": "Gabriela Silva",
-        "icon":"../img/Pfp/professor/woman1.png",
-        "atribuicao":1,
-        "categorias": ["Sistemas Automatizados","Sensores", "Programação de CLPs"],
-        "descricao": "Explore o mundo da automação industrial nesta aula prática. Aprenda sobre sensores, controladores lógicos programáveis (CLPs) e integração de sistemas automatizados. Desenvolva habilidades para operar e programar equipamentos, preparando-se para impulsionar a eficiência na indústria."
+        "icon": "../img/Pfp/professor/woman1.png",
+        "atribuicao": 1,
+        "categorias": [
+            "História",
+            "Geografia",
+            "Sociologia"
+        ],
+        "descricao": "Nesta aula de humanas, vamos explorar os eventos históricos significativos, entender a geografia do nosso planeta e mergulhar na sociologia para entender como a sociedade funciona. Prepare-se para uma jornada emocionante através das ciências humanas."
     },
     {
         "nomeDaAula": "Humanas",
         "cor": "humanas-color",
-        "sala": "16",
+        "sala": "23",
         "andar": "03",
-        "bloco": "D",
+        "bloco": "C",
         "duracao": "1h",
-        "professor": "José Antônio",
-        "icon":"../img/Pfp/professor/man1.png",
-        "atribuicao":0,
-        "categorias": ["Design de Vestuário","Moda", "Estratégias de Marketing"],
-        "descricao": "Desenvolva habilidades práticas de design, costura e seleção de materiais. Aprenda sobre gestão de moda e estratégias de marketing. Prepare-se para uma carreira promissora no mundo da moda."
+        "professor": "Gabriela Silva",
+        "icon": "../img/Pfp/professor/woman1.png",
+        "atribuicao": 1,
+        "categorias": [
+            "Filosofia",
+            "Psicologia",
+            "Antropologia"
+        ],
+        "descricao": "Nesta aula de humanas, vamos aprender sobre filosofia, explorar os conceitos da psicologia e entender a antropologia para estudar aspectos do comportamento humano. Prepare-se para uma jornada emocionante através das ciências humanas."
     },
     {
         "nomeDaAula": "Natureza",
@@ -61,9 +75,13 @@
         "bloco": "B",
         "duracao": "1h",
         "professor": "Adriana Martins",
-        "icon":"../img/Pfp/professor/woman3.png",
-        "atribuicao":1,
-        "categorias": ["Técnico em Edificações", "Georreferenciamento", "Medições e Levantamentos Topográficos"],
-        "descricao": "Aprenda medição precisa do terreno, uso de instrumentos como teodolitos e estações totais, criação de mapas e identificação de acidentes geográficos para projetos de construção."
+        "icon": "../img/Pfp/professor/woman3.png",
+        "atribuicao": 1,
+        "categorias": [
+            "Biologia da Conservação",
+        "Ecologia de Populações",
+        "Ecologia de Comunidades"
+        ],
+        "descricao": "Explore a interação entre organismos e seu ambiente, estude a dinâmica de populações e comunidades e aprenda sobre a importância da conservação biológica."
     }
 ]

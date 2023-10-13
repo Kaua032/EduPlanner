@@ -164,7 +164,7 @@ main {
     width: 90%;
     max-width: 150px;
     min-height: 35px;
-    background: rgba(40, 40, 40, 0.3);
+    background: #CAC0E3;
     border-radius: 15px;
 
     display: flex;
@@ -193,7 +193,7 @@ main {
     font-weight: 500;
     font-size: 15px;
     line-height: 20px;
-    color: #282828;
+    color: #36175E;
 }
 
 .titlePart {
