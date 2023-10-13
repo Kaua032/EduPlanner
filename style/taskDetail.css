@@ -467,3 +467,29 @@ button {
         opacity: 1;
     }
 }
+
+@media (min-width: 700px) {
+    nav {
+      top: 0;
+      left: 0;
+      width: 60px;
+      height: 100vh;
+      max-height: none;
+      padding: 0;
+      background-color: #fff;
+    }
+    .navIcons {
+      flex-direction: column;
+      align-items: start;
+      justify-content: center;
+      gap: 50px;
+    }
+    .navIcons a {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+    }
+    .navIcons a p {
+      color: #112940;
+    }
+  }
