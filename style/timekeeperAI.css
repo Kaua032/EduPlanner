@@ -14,7 +14,7 @@ body {
 
 main {
   height: 100%;
-  background: linear-gradient(180deg, #FEFEFE 13.14%, #CCDDF7 100%);
+  background: linear-gradient(180deg, #FEFEFE 13.14%, #E4DDEB 100%);
 }
 
 header {
@@ -114,6 +114,24 @@ header {
 
 /* MODAL ERRO */
 
+.eduIA-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 40px;
+}
+
+.eduIA-text p{
+  font-weight: 700;
+
+}
+
+.eduIA {
+  width: 60px;
+  height: 60px;
+}
+
 .HeaderTitle {
   font-weight: bold;
   font-size: 32px;
@@ -156,7 +174,7 @@ hr {
 header {
   width: 100%;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 2fr 1fr;
   justify-items: center;
   background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(25px);
@@ -273,7 +291,7 @@ nav {
   max-width: 300px;
   min-height: 60px;
   padding: 10px;
-  background: linear-gradient(85.12deg, #f8fdff 4.95%, #EAF2FF 96.01%);
+  background: linear-gradient(85.12deg, #E2DBEA 4.95%, #E2C8FF 96.01%);
   border: 1px solid #DAE3F1;
   border-radius: 20px 20px 20px 6px;
 
@@ -283,7 +301,7 @@ nav {
   font-size: 16px;
   justify-content: flex-start;
   flex-direction: column;
-  color: #2C456B;
+  color: #6B53AB;
 }
 #resultU {
   max-width: 300px;

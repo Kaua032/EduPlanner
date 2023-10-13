@@ -141,7 +141,7 @@ fetch('../src/data.json')
 function Greetings() {
     writeChat.innerHTML += `
                         <section class="result">
-                    <figure id="result"> Olá, sou o TimeKeeper AI. Como posso te ajudar?
+                    <figure id="result"> Olá, sou o Edu IA. Como posso te ajudar?
                     </figure>
                 </section>
                         `
