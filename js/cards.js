@@ -65,7 +65,7 @@ fetch("../src/data.json")
 inputQuestion.addEventListener("keypress", (e) => {
   if (inputQuestion.value && e.key === "Enter") {
     localStorage.setItem("homeQuestion", `${inputQuestion.value}`);
-    window.location.href = "./timeKeeperAI.html";
+    window.location.href = "./EduIa.html";
   }
 });
 

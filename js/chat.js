@@ -28,16 +28,16 @@ fetch('../src/data.json')
             // localStorage.setItem(`CardOrder${i}`, numerosSorteados[i])
         }
         const horarios = [
-            { horario: "07:15", id: '1' },
-            { horario: "08:45", id: '2' },
-            { horario: "10:30", id: '3' },
-            { horario: "12:30", id: '4' },
-            { horario: "14:15", id: '5' },
-            { horario: "15:45", id: '6' }
-        ];
+            { horario: "07:15", id: "0" },
+            { horario: "08:15", id: "1" },
+            { horario: "10:15", id: "2" },
+            { horario: "11:45", id: "3" },
+            { horario: "12:45", id: "4" },
+            { horario: "15:45", id: "5" },
+          ];
         for (let i = 0; i < infoAulas.length; i++) {
-            infoAulas[numerosSorteados[i]].id = horarios[i].id;
-            infoAulas[numerosSorteados[i]].horario = horarios[i].horario;
+            infoAulas[i].id = horarios[i].id;
+            infoAulas[i].horario = horarios[i].horario;
         }
         infoAulas.sort((a, b) => a.id - b.id);
         const regras = JSON.stringify(regrasGPT);
@@ -109,7 +109,7 @@ fetch('../src/data.json')
                         console.log(`${json.error.message}`)
                         writeChat.innerHTML += `
                         <section class="result">
-                    <figure id="result"><strong> ERRO! NENHUMA CHAVE API FOI ENCONTRADA:</strong><br> Por favor aperte no botão "beta" na parte superior da tela e digite uma nova chave API para continuar usando o TimeKeeper AI ou consulte o suporte do SENAI TimeKeeper. <br><br> <a href="https://platform.openai.com/account/api-keys" target=“_blank”>Clique Aqui para ser redirecionado ao site de chaves API da OPEN AI</a>
+                    <figure id="result"><strong> ERRO! NENHUMA CHAVE API FOI ENCONTRADA:</strong><br> Por favor aperte no botão "beta" na parte superior da tela e digite uma nova chave API para continuar usando o EduPlanner AI ou consulte o suporte do EduPlanner AI. <br><br> <a href="https://platform.openai.com/account/api-keys" target=“_blank”>Clique Aqui para ser redirecionado ao site de chaves API da OPEN AI</a>
 
                     </figure>
                 </section>
