@@ -21,12 +21,6 @@ fetch('../src/data.json')
     .then(response => response.json())
     .then(infoAulas => {
         console.log(`CHAVE API ATUAL: ${OPENAI_API_KEY}`)
-        const numerosSorteados = [];
-        console.log(numerosSorteados)
-        for (let i = 0; i < 6; i++) {
-            numerosSorteados.push(localStorage.getItem(`CardOrder${i}`))
-            // localStorage.setItem(`CardOrder${i}`, numerosSorteados[i])
-        }
         const horarios = [
             { horario: "07:15", id: "0" },
             { horario: "08:15", id: "1" },
