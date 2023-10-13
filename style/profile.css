@@ -1,257 +1,300 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Flex:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&family=Roboto+Flex:wght@300;400;500;600;700&family=Roboto+Slab:wght@300;400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap");
 
 * {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 
-    list-style: none;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-decoration: none;
+  list-style: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  text-decoration: none;
 }
 
 body {
   background: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    user-select: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
 }
 
 header {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-    background-image: url(../img/Cards/Icons\ bg\ -\ header.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    font-weight: 500;
-    height: 282px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-weight: 500;
+  height: 282px;
+}
+#description_profile {
+  width: 360px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#description_profile #assignments,
+#description_profile #school {
+  width: 170px;
+  height: 66px;
+  border-radius: 20px;
+  border: 1px solid #d8d8d8;
+
+  display: flex;
+  align-items: center;
+}
+#description_profile #assignments {
+  justify-content: center;
+  gap: 10px;
+}
+#description_profile #assignments h2 {
+  color: #282828;
+  font-family: Roboto;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 100% */
+}
+#description_profile #assignments p {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
+}
+#description_profile #school {
+  flex-direction: column;
+  justify-content: center;
+}
+#description_profile #school h2 {
+  color: #282828;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 18px; /* 120% */
+}
+#description_profile #school p {
+  color: #757575;
+  font-family: Roboto;
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 12px;
 }
 
 .Logo {
-    position: absolute;
-    width: 138px;
-    height: 45px;
-    top: 30px;
-    display: flex;
-    justify-content: center;
-    background: rgba(255, 255, 255, 0.3);
-    border: 0.5px solid #FEFEFE;
-    border-radius: 5px;
+  position: absolute;
+  width: 138px;
+  height: 45px;
+  top: 30px;
+  display: flex;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.3);
+  border: 0.5px solid #fefefe;
+  border-radius: 5px;
 }
 
 .Logo img {
-    backdrop-filter: blur(5px);
-    width: 100px;
+  backdrop-filter: blur(5px);
+  width: 100px;
 }
 
 .name {
-    color: #282828;
-    font-weight: 600;
-    font-size: 26px;
-    font-weight: 500;
+  color: #282828;
+  font-weight: 600;
+  font-size: 26px;
+  font-weight: 500;
 }
 
 .HeaderSpan {
-    color: #595959;
-    font-weight: 500;
-    font-size: 18px;
+  color: #595959;
+  font-weight: 500;
+  font-size: 18px;
 }
 
 .About li {
-    display: flex;
-    gap: 1rem;
-    font-weight: 500;
-    font-size: 18px;
-    background: #FEFEFE;
-    border: 1px solid #EAEAEA;
-    border-radius: 20px;
-    padding: 1rem;
+  display: flex;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 18px;
+  background: #fefefe;
+  border: 1px solid #eaeaea;
+  border-radius: 20px;
+  padding: 1rem;
 }
 
 .About {
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .InfoTitle {
-    color: #5E5E5E;
-    font-weight: 500;
-    font-size: 22px;
+  color: #5e5e5e;
+  font-weight: 500;
+  font-size: 22px;
 }
 
 .SubText {
-    font-weight: 500;
-    font-size: 14px;
-    line-height: 12px;
-    display: flex;
-    align-items: center;
-    color: #757575;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 12px;
+  display: flex;
+  align-items: center;
+  color: #757575;
 }
 
 .HeaderInfo {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
-
 .HeaderInfo li {
-    font-weight: 275;
-    font-size: 18px;
-    color: #595959;
+  font-weight: 275;
+  font-size: 18px;
+  color: #595959;
 }
 
 .headerWrapper {
-    display: flex;
-    gap: 2rem;
-    margin-top: 40px;
+  display: flex;
+  gap: 2rem;
+  margin-top: 40px;
 }
 
 .Unidade {
-    background: #FBFBFB;
-    border: 1px solid #D8D8D8;
-    border-radius: 20px;
-    width: 90%;
-    height: 66px;
-    font-weight: 500;
-    font-size: 18px;
-    color: #282828;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    line-height: 18px;
-    margin: 0 auto;
+  background: #fbfbfb;
+  border: 1px solid #d8d8d8;
+  border-radius: 20px;
+  width: 90%;
+  height: 66px;
+  font-weight: 500;
+  font-size: 18px;
+  color: #282828;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 18px;
+  margin: 0 auto;
 }
 
 .UnidadeName {
-    font-weight: 500;
-    font-size: 10px;
-    color: #757575;
-    line-height: 12px;
+  font-weight: 500;
+  font-size: 10px;
+  color: #757575;
+  line-height: 12px;
 }
 
 .Change {
-    color: #003D72;
-    font-weight: 600;
-    font-size: 22px;
-    margin-top: 20px;
+  color: #6b53ab;
+  font-weight: 600;
+  font-size: 22px;
+  margin-top: 20px;
 }
 
 .exit {
-    color: #800000;
-    font-weight: 600;
-    font-size: 22px;
+  color: #d80000;
+  font-weight: 600;
+  font-size: 22px;
 }
 
 .Photo {
-    background-image: url();
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-    border: 1px solid #676767;
+  background-image: url();
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid #676767;
 }
 
 .Photo img {
-
-    width: 130px;
-    height: 130px;
-    border-radius: 100%;
-    border: 1px solid #676767;
+  width: 130px;
+  height: 130px;
+  border-radius: 100%;
+  border: 1px solid #676767;
 }
-
 
 main {
-    display: flex;
-    justify-content: start;
-    align-items: start;
-    flex-direction: column;
-    width: 90%;
-    margin: 0 auto;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  width: 90%;
+  margin: 0 auto;
 }
-
-
-
-
-
-
-
-
-
-
-
 
 /* BARRA DE NAVEGAÇÃO */
 nav {
-    /* display: none; */
-    position: fixed;
-    bottom: 0;
-    max-height: 150px;
-    min-height: 55px;
+  /* display: none; */
+  position: fixed;
+  bottom: 0;
+  max-height: 150px;
+  min-height: 55px;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.9);
+
+  backdrop-filter: blur(25px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.navIcons {
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin: 0px 10px;
+}
+.navIcons a {
+  width: 5%;
+  min-width: 35px;
+}
+.navIcons a img {
+  width: 100%;
+  max-width: 45px;
+}
+
+@media (min-width: 700px) {
+  header {
     width: 100%;
-    background: rgba(255, 255, 255, 0.9);
-  
-    backdrop-filter: blur(25px);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 20px;
+    align-self: flex-end;
+  }
+  .content {
+    width: 100%;
+    align-self: flex-end;
+  }
+  nav {
+    top: 0;
+    left: 0;
+    width: 60px;
+    height: 100vh;
+    max-height: none;
+    background-color: #fff;
+    align-items: center;
+    padding: 0;
   }
   .navIcons {
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    gap: 50px;
+    margin: 0px;
     height: 100%;
+  }
+  .navIcons a {
     display: flex;
-    justify-content: space-around;
     align-items: center;
-    margin: 0px 10px;
+    gap: 30px;
   }
-  .navIcons a{
-    width: 5%;
-    min-width: 35px;
+  .navIcons a p {
+    color: #112940;
   }
-  .navIcons a img{
-    width: 100%;
-    max-width: 45px;
-  }
-
-  
-  @media (min-width: 700px) {
-    header {
-      width: 100%;
-      align-self: flex-end;
-    }
-    .content {
-      width: 100%;
-      align-self: flex-end;
-    }
-    nav {
-      top: 0;
-      left: 0;
-      width: 60px;
-      height: 100vh;
-      max-height: none;
-      background-color: #fff;
-      align-items: center;
-      padding: 0;
-    }
-    .navIcons {
-      flex-direction: column;
-      align-items: start;
-      justify-content: center;
-      gap: 50px;
-      margin: 0px;
-      height: 100%;
-    }
-    .navIcons a {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-    }
-    .navIcons a p {
-      color: #112940;
-    }
-  }
+}
