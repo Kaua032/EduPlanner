@@ -1,25 +1,24 @@
 // Antony (@TonyRodIv)
-let writeCard = document.getElementById('writeCards')
-let writeGreetings = document.getElementById('writeGreetings')
-let inputQuestion = document.getElementById('chatInit')
+let writeCard = document.getElementById("writeCards");
+let writeGreetings = document.getElementById("writeGreetings");
+let inputQuestion = document.getElementById("chatInit");
 const numerosSorteados = [];
 for (let i = 0; i < 6; i++) {
   numerosSorteados.push(localStorage.getItem(`CardOrder${i}`));
 }
 const horarios = [
-  { horario: "07:15", id: '1' },
-  { horario: "08:15", id: '2' },
-  { horario: "10:15", id: '3' },
-  { horario: "11:45", id: '4' },
-  { horario: "12:45", id: '5' },
-  { horario: "15:45", id: '6' }
+  { horario: "07:15", id: "0" },
+  { horario: "08:15", id: "1" },
+  { horario: "10:15", id: "2" },
+  { horario: "11:45", id: "3" },
+  { horario: "12:45", id: "4" },
+  { horario: "15:45", id: "5" },
 ];
-console.log(numerosSorteados)
-console.log(numerosSorteados[1])
-fetch('../src/data.json')
-  .then(response => response.json())
-  .then(infoAulas => {
+const aulas = []
 
+fetch("../src/data.json")
+  .then((response) => response.json())
+  .then((infoAulas) => {
     for (let i = 0; i < infoAulas.length; i++) {
       infoAulas[i].id = horarios[i].id;
       infoAulas[i].horario = horarios[i].horario;
@@ -28,7 +27,7 @@ fetch('../src/data.json')
     infoAulas.sort((a, b) => a.id - b.id);
     for (let i = 0; i < infoAulas.length; i++) {
       writeCard.innerHTML += `
-        <figure class="${infoAulas[i].cor} normalCard" onclick="card${numerosSorteados[i]}()">
+        <figure class="${infoAulas[i].cor} normalCard" onclick="card${infoAulas[i].id}()">
           <div class="cardImg">
             <article class="infoCard">
               <p class="titleCard">
@@ -59,47 +58,44 @@ fetch('../src/data.json')
         Bom dia, Alice!! <br>
     </span>
     Sua <span class="blueWelcome">Primeira aula</span> do dia será no primeiro pavimento, Sala ${infoAulas[0].sala}
-</p>`
-    console.log(infoAulas);
-
-  });
+</p>`;
+    aulas = infoAulas
+});
 
 inputQuestion.addEventListener("keypress", (e) => {
   if (inputQuestion.value && e.key === "Enter") {
-    localStorage.setItem("homeQuestion", `${inputQuestion.value}`)
-    window.location.href = './timeKeeperAI.html'
+    localStorage.setItem("homeQuestion", `${inputQuestion.value}`);
+    window.location.href = "./timeKeeperAI.html";
   }
 });
 
 function card0() {
-  localStorage.setItem("cardDetail", 0)
-  localStorage.setItem("horario", horarios[numerosSorteados[0]].horario)
-  window.location.href = './taskDetail.html'
+  localStorage.setItem("cardDetail", 0);
+  localStorage.setItem("horario", horarios[0].horario);
+  window.location.href = "./taskDetail.html";
 }
 function card1() {
-  localStorage.setItem("cardDetail", 1)
-  localStorage.setItem("horario", horarios[numerosSorteados[1]].horario)
-  window.location.href = './taskDetail.html'
+  localStorage.setItem("cardDetail", 1);
+  localStorage.setItem("horario", horarios[1].horario);
+  window.location.href = "./taskDetail.html";
 }
 function card2() {
-  localStorage.setItem("cardDetail", 2)
-  localStorage.setItem("horario", horarios[numerosSorteados[2]].horario)
-  window.location.href = './taskDetail.html'
+  localStorage.setItem("cardDetail", 2);
+  localStorage.setItem("horario", horarios[2].horario);
+  window.location.href = "./taskDetail.html";
 }
 function card3() {
-  localStorage.setItem("cardDetail", 3)
-  localStorage.setItem("horario", horarios[numerosSorteados[3]].horario)
-  window.location.href = './taskDetail.html'
+  localStorage.setItem("cardDetail", 3);
+  localStorage.setItem("horario", horarios[3].horario);
+  window.location.href = "./taskDetail.html";
 }
 function card4() {
-  localStorage.setItem("cardDetail", 4)
-  localStorage.setItem("horario", horarios[numerosSorteados[4]].horario)
-  window.location.href = './taskDetail.html'
+  localStorage.setItem("cardDetail", 4);
+  localStorage.setItem("horario", horarios[4].horario);
+  window.location.href = "./taskDetail.html";
 }
 function card5() {
-  localStorage.setItem("cardDetail", 5)
-  localStorage.setItem("horario", horarios[numerosSorteados[5]].horario)
-  window.location.href = './taskDetail.html'
+  localStorage.setItem("cardDetail", 5);
+  localStorage.setItem("horario", horarios[5].horario);
+  window.location.href = "./taskDetail.html";
 }
-
-

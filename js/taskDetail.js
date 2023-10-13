@@ -13,11 +13,6 @@ fetch('../src/data.json')
         let i = localStorage.getItem("cardDetail")
         let horario = localStorage.getItem("horario")
         let color = infoAulas[i].cor
-        if (color == "dark") {
-            head.style.backgroundImage = "url('../img/Cards/Icons\ bg\ -\ header.svg')"
-        } else {
-            head.style.backgroundImage = `url('../img/Cards/${color}.svg')`
-        }
         let atribuicao = infoAulas[i].atribuicao
         if (atribuicao > 0) {
             atribuicao = "Pendente"

@@ -4,6 +4,7 @@
   padding: 0;
   margin: 0;
   text-decoration: none;
+  box-sizing: border-box;
 }
 
 body {
@@ -22,9 +23,11 @@ main {
 
 header {
   width: 100%;
+
   display: flex;
   flex-direction: column;
   align-items: center;
+
   gap: 15px;
   backdrop-filter: blur(25px);
 }
@@ -72,7 +75,7 @@ header {
 }
 
 .blueWelcome {
-  color: #A470E0;
+  color: #a470e0;
 }
 
 .search {
@@ -182,22 +185,27 @@ nav {
   max-width: 45px;
 }
 
-.navIcons a p{
+.navIcons a p {
   display: none;
 }
 
 @media (min-width: 700px) {
   header {
-    width: 92.5%;
-    align-self: flex-end;
+    width: 70%;
+    margin-left: 3rem;
+    align-items: center;
     background-color: #f8f8f8;
   }
-  .content {
-    width: 90%;
-    align-self: flex-end;
+  .search {
+    align-self: flex-start;
+    margin-left: 8.1rem;
+  }
+  .content{
+    margin-left: 50px;
   }
   nav {
     top: 0;
+    left: 0;
     width: 60px;
     height: 100vh;
     max-height: none;
@@ -217,5 +225,16 @@ nav {
   }
   .navIcons a p {
     color: #112940;
+  }
+}
+@media (min-width: 1250px){
+  header {
+    margin: 0 auto;
+  }
+  .content{
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    flex-direction: column;
   }
 }

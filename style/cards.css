@@ -6,8 +6,7 @@
   min-height: 140px;
   border-radius: 15px;
   user-select: none;
-  align-items: flex-end;
-  margin-left: 35px;
+  margin-left: 32px;
 }
 
 .normalCard {
@@ -219,4 +218,17 @@
 
 .green {
   background-image: linear-gradient(130.25deg, #55b68c 3.08%, #325e4a 97.12%);
+}
+
+@media (min-width: 800px){
+  .ad{
+    align-self: flex-start;
+    margin-left: 32px;
+  } 
+}
+@media (min-width: 1250px){
+  .ad{
+    align-self: flex-start;
+    margin-left: 32px;
+  } 
 }

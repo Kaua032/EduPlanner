@@ -223,14 +223,15 @@ fetch("../src/data.json")
 
     function loadCards() {
       const horarios = [
-        { horario: "07:15", id: "1" },
-        { horario: "08:45", id: "2" },
-        { horario: "10:30", id: "3" },
-        { horario: "12:30", id: "4" },
-        { horario: "14:15", id: "5" },
-        { horario: "15:45", id: "6" },
+        { horario: "07:15", id: "0" },
+        { horario: "08:15", id: "1" },
+        { horario: "10:15", id: "2" },
+        { horario: "11:45", id: "3" },
+        { horario: "12:45", id: "4" },
+        { horario: "15:45", id: "5" },
       ];
       for (let i = 0; i < infoAulas.length; i++) {
+        console.log(infoAulas)
         infoAulas[i].id = horarios[i].id;
         infoAulas[i].horario = horarios[i].horario;
       }
@@ -239,7 +240,7 @@ fetch("../src/data.json")
       writeCard.innerHTML = "";
       for (let i = 0; i < infoAulas.length; i++) {
         writeCard.innerHTML += `
-        <figure class="${infoAulas[i].cor}" id="normalBigCard" onclick="card${numerosSorteados[i]}()">
+        <figure class="${infoAulas[i].cor}" id="normalBigCard" onclick="card${i}()">
           <div class="cardImgBG">
             <article class="infoCard">
               <p class="titleCardC">
@@ -270,12 +271,12 @@ fetch("../src/data.json")
   });
 
 const horarios = [
-  { horario: "07:15", id: "1" },
-  { horario: "08:45", id: "2" },
-  { horario: "10:30", id: "3" },
-  { horario: "12:30", id: "4" },
-  { horario: "14:15", id: "5" },
-  { horario: "15:45", id: "6" },
+  { horario: "07:15", id: "0" },
+  { horario: "08:45", id: "1" },
+  { horario: "10:30", id: "2" },
+  { horario: "12:30", id: "3" },
+  { horario: "14:15", id: "4" },
+  { horario: "15:45", id: "5" },
 ];
 let numerosSorteadosDetail = localStorage.getItem("localRandomNum");
 numerosSorteadosDetail = numerosSorteadosDetail.split(",");
@@ -283,31 +284,31 @@ console.log(numerosSorteadosDetail);
 
 function card0() {
   localStorage.setItem("cardDetail", 0);
-  localStorage.setItem("horario", horarios[numerosSorteadosDetail[0]].horario);
+  localStorage.setItem("horario", horarios[0].horario);
   window.location.href = "./taskDetail.html";
 }
 function card1() {
   localStorage.setItem("cardDetail", 1);
-  localStorage.setItem("horario", horarios[numerosSorteadosDetail[1]].horario);
+  localStorage.setItem("horario", horarios[1].horario);
   window.location.href = "./taskDetail.html";
 }
 function card2() {
   localStorage.setItem("cardDetail", 2);
-  localStorage.setItem("horario", horarios[numerosSorteadosDetail[2]].horario);
+  localStorage.setItem("horario", horarios[2].horario);
   window.location.href = "./taskDetail.html";
 }
 function card3() {
   localStorage.setItem("cardDetail", 3);
-  localStorage.setItem("horario", horarios[numerosSorteadosDetail[3]].horario);
+  localStorage.setItem("horario", horarios[3].horario);
   window.location.href = "./taskDetail.html";
 }
 function card4() {
   localStorage.setItem("cardDetail", 4);
-  localStorage.setItem("horario", horarios[numerosSorteadosDetail[4]].horario);
+  localStorage.setItem("horario", horarios[4].horario);
   window.location.href = "./taskDetail.html";
 }
 function card5() {
   localStorage.setItem("cardDetail", 5);
-  localStorage.setItem("horario", horarios[numerosSorteadosDetail[5]].horario);
+  localStorage.setItem("horario", horarios[5].horario);
   window.location.href = "./taskDetail.html";
 }
