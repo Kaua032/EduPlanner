@@ -1,19 +1,6 @@
 // Antony (@TonyRodIv)
 const modalERR = document.getElementById("modalERR");
 let goAway = document.getElementById('goAway')
-screenTest()
-function screenTest() {
-    let screenWidth = window.innerWidth;
-    if(screenWidth>800){
-        modalERR.style.display = 'inline-flex'
-    }else{
-        modalERR.style.display = 'none'
-    }
-}
-goAway.addEventListener('click',()=>{
-    modalERR.style.display = 'none'
-})
-window.addEventListener("resize", screenTest);
 
 const usuarios = [
     {

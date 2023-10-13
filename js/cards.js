@@ -8,10 +8,10 @@ for (let i = 0; i < 6; i++) {
 }
 const horarios = [
   { horario: "07:15", id: '1' },
-  { horario: "08:45", id: '2' },
-  { horario: "10:30", id: '3' },
-  { horario: "12:30", id: '4' },
-  { horario: "14:15", id: '5' },
+  { horario: "08:15", id: '2' },
+  { horario: "10:15", id: '3' },
+  { horario: "11:45", id: '4' },
+  { horario: "12:45", id: '5' },
   { horario: "15:45", id: '6' }
 ];
 console.log(numerosSorteados)
@@ -21,8 +21,8 @@ fetch('../src/data.json')
   .then(infoAulas => {
 
     for (let i = 0; i < infoAulas.length; i++) {
-      infoAulas[numerosSorteados[i]].id = horarios[i].id;
-      infoAulas[numerosSorteados[i]].horario = horarios[i].horario;
+      infoAulas[i].id = horarios[i].id;
+      infoAulas[i].horario = horarios[i].horario;
     }
 
     infoAulas.sort((a, b) => a.id - b.id);
@@ -58,8 +58,7 @@ fetch('../src/data.json')
     <span class="greetings">
         Bom dia, Alice!! <br>
     </span>
-    Sua <span class="blueWelcome">Primeira aula</span> será no bloco <span
-        class="blueWelcome">${infoAulas[0].bloco}</span>👍🏼
+    Sua <span class="blueWelcome">Primeira aula</span> do dia será no primeiro pavimento, Sala ${infoAulas[0].sala}
 </p>`
     console.log(infoAulas);
 

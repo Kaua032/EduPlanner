@@ -231,8 +231,8 @@ fetch("../src/data.json")
         { horario: "15:45", id: "6" },
       ];
       for (let i = 0; i < infoAulas.length; i++) {
-        infoAulas[numerosSorteados[i]].id = horarios[i].id;
-        infoAulas[numerosSorteados[i]].horario = horarios[i].horario;
+        infoAulas[i].id = horarios[i].id;
+        infoAulas[i].horario = horarios[i].horario;
       }
 
       infoAulas.sort((a, b) => a.id - b.id);
