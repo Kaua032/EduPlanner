@@ -1,14 +1,14 @@
 {
-  "background_color": "#035aa6",
-  "description": "Projeto integrador SENAI",
+  "background_color": "#CB91F2",
+  "description": "Mostra SESI",
   "dir": "ltr",
   "display": "standalone",
-  "name": "Senai TimeKeeper",
+  "name": "EduPlanner",
   "orientation": "any",
   "scope": "/index.html",
-  "short_name": "TimeKeeper",
-  "start_url": "/TimeKeeper/",
-  "theme_color": "#035aa6",
+  "short_name": "EduPlanner",
+  "start_url": "/EduPlanner/",
+  "theme_color": "#CB91F2",
   "categories": [
     "education",
     "productivity"
@@ -26,12 +26,7 @@
   "shortcuts": [
     {
       "name": "Página Inicial",
-      "url": "https://tonyrodiv.github.io/TimeKeeper/pages/home.html",
-      "description": ""
-    },
-    {
-      "name": "TimeKeeper AI",
-      "url": "https://tonyrodiv.github.io/TimeKeeper/pages/timeKeeperAI.html",
+      "url": "https://kaua032.github.io/EduPlanner/pages/home.html",
       "description": ""
     }
   ]
