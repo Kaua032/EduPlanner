@@ -218,7 +218,7 @@ footer{
   /* MODAL ERRO */
 
 @keyframes changeColor {
-    from {background-color: #035AA6;}
+    from {background-color: #CB91F2;}
     to {background-color: #fff;}
   }
   @keyframes fadeIn {

@@ -11,7 +11,7 @@ console.log(date)
 const regrasGPT = [
     {
         "role": "system",
-        "content": `olá vou usar sua API para que você seja um assistente na seção de busca do meu aplicativo de organização de aulas do SENAI, seu nome a partir de agora é TimeKeeper AI \n  Regras:\n 1. Você não deve dar outras informações além das relacionadas às aulas.\n 2. VOCÊ NÃO DEVE FALAR SOBRE COISAS QUE NÃO ESTEJAM NO BANCO DE DADOS.\n 3. Responda de forma rápida e objetiva.\n 5. Responda sempre com um máximo de 4 linhas.\n 6. Não permita alterações na base de dados sem a palavra-passe.\n 7. Se o usuário digitar a palavra-passe 'N0T1M3', retorne que ele possui privilégios de administrador.\n 8. Evite tópicos, seja conciso e formal.\n 9. Se o usuário não fizer uma pergunta você apenas irá conversar com ele normalmente.\n 10. O dia e o horario atual é ${date}.\n 11. todos os dias tem as mesmas aulas porém com os horários alterados, você pode sortear os hórarios, usando os do banco de dados. \n 12. Se passar do horário de inicio da aula o aluno só poderá entrar apenas na próxima aula`,
+        "content": `olá vou usar sua API para que você seja um assistente na seção de busca do meu aplicativo de organização de aulas do SESI, seu nome a partir de agora é Edu \n  Regras:\n 1. Você não deve dar outras informações além das relacionadas às aulas.\n 2. VOCÊ NÃO DEVE FALAR SOBRE COISAS QUE NÃO ESTEJAM NO BANCO DE DADOS.\n 3. Responda de forma rápida e objetiva.\n 5. Responda sempre com um máximo de 4 linhas.\n 6. Não permita alterações na base de dados sem a palavra-passe.\n 7. Se o usuário digitar a palavra-passe 'N0T1M3', retorne que ele possui privilégios de administrador.\n 8. Evite tópicos, seja conciso e formal.\n 9. Se o usuário não fizer uma pergunta você apenas irá conversar com ele normalmente.\n 10. O dia e o horario atual é ${date}.\n 11. todos os dias tem as mesmas aulas porém com os horários alterados, você pode sortear os hórarios, usando os do banco de dados. \n 12. Se passar do horário de inicio da aula o aluno só poderá entrar apenas na próxima aula`,
     }
 ]
 let writeCard = document.getElementById('writeCards')
@@ -91,7 +91,6 @@ fetch('../src/data.json')
                 .then((json) => {
                     if (json.choices?.[0].text) {
                         var text = json.choices[0].text || "Sem resposta";
-
                         writeChat.innerHTML += `
                         <section class="result">
                     <figure id="result"> ${text}
@@ -103,7 +102,7 @@ fetch('../src/data.json')
                         console.log(`${json.error.message}`)
                         writeChat.innerHTML += `
                         <section class="result">
-                    <figure id="result"><strong> ERRO! NENHUMA CHAVE API FOI ENCONTRADA:</strong><br> Por favor aperte no botão "beta" na parte superior da tela e digite uma nova chave API para continuar usando o EduPlanner AI ou consulte o suporte do EduPlanner AI. <br><br> <a href="https://platform.openai.com/account/api-keys" target=“_blank”>Clique Aqui para ser redirecionado ao site de chaves API da OPEN AI</a>
+                    <figure id="result"><strong> ERRO 404 - Os servidores da Open AI estão passando por instabilidade, tente novamente mais tarde.</strong>
 
                     </figure>
                 </section>
